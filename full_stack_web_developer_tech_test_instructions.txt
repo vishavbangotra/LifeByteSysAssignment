@@ -1,0 +1,37 @@
+Full Stack Web Developer Technical Test Instructions
+
+Task 1: Flask Backend
+1. Set up a Flask application with the following routes:
+	•	/ - Home route that displays a welcome message.
+	•	/api/data - JSON API endpoint that returns a list of dummy data (at least 25 objects) in the json format.
+	•	/api/data/<id> - JSON API endpoint that returns details of a specific dummy object based on the provided <id>.
+
+2. Implement a database model using Flask SQLAlchemy for the dummy objects. The model should have at least the following fields:
+	•	id (integer)
+	•	name (string)
+	•	age (integer)
+
+
+Task 2: JavaScript Frontend
+1. Create an HTML page (index.html) with the following elements:
+	•	A header displaying the title of the page.
+	•	A button labeled “Load Data”.
+	•	A container to display the loaded data in tabular format with functionality like searching, sorting and pagination (user should be able to choose how many records do they want in a single view either 5, 10 or 25 and pagination should be set up to automatically adjust for this). Feel free to use any library (Jquery Datatables preferred).
+	•	When a search or a sorting feature is important make sure the page is not refreshed completely but only the element needed in the UI is updated.
+	•	A container to display the same data in form of a graph with names on x axis and age’s on y axis. Feel free to use any graphing libraries (Plotly preferred).
+
+2. Write JavaScript code to handle the following:
+	•	When the “Load Data” button is clicked, make an AJAX request to the Flask API endpoint (/api/data) and retrieve the list of dummy objects.
+	•	Populate the containers on the page with the retrieved data without refreshing the page.
+
+
+Task 3: CSS Styling
+1. Style the HTML page using CSS to make it visually appealing. Feel free to use any CSS framework (Bootstrap preferred) or custom CSS styles.
+2. Apply responsive design principles to ensure the page looks good on both desktop and mobile devices.
+
+
+Task 4: Hosting
+1. Host the website built on some domain and please share us the link to the domain to review the website
+
+
+While submitting the tech test please upload the code used to develop the website into a Github folder, please make the Github project public and share with us the link to review it. Please make use of the readme file to provide us with useful documentation of the development process. 
